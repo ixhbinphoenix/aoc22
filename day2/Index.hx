@@ -9,43 +9,31 @@ class Index {
       var moves = line.split(' ');
 
       var enemyMove = switch moves[0] {
-        case "A":
-          Rock;
-        case "B":
-          Paper;
-        case "C":
-          Scissors;
+        case "A": Rock;
+        case "B": Paper;
+        case "C": Scissors;
         case _:
           continue;  
       }
 
       var solutionMove = switch moves[1] {
-        case "X":
-          Rock;
-        case "Y":
-          Paper;
-        case "Z":
-          Scissors;
+        case "X": Rock;
+        case "Y": Paper;
+        case "Z": Scissors;
         case _:
           throw "This is not XYZ";
       }
 
       var outcomePoints = switch [solutionMove, enemyMove] {
-        case [Rock, Scissors] | [Paper, Rock] | [Scissors, Paper]:
-          6;
-        case [Rock, Paper] | [Paper, Scissors] | [Scissors, Rock]:
-          0;
-        case _:
-          3;
+        case [Rock, Scissors] | [Paper, Rock] | [Scissors, Paper]: 6;
+        case [Rock, Paper] | [Paper, Scissors] | [Scissors, Rock]: 0;
+        case _: 3;
       }
 
       var movePoints = switch solutionMove {
-        case Rock:
-          1;
-        case Paper:
-          2;
-        case Scissors:
-          3;
+        case Rock: 1;
+        case Paper: 2;
+        case Scissors: 3;
       }
 
       points = points + movePoints + outcomePoints;
@@ -57,12 +45,9 @@ class Index {
       var moves = line.split(" ");
 
       var enemyMove = switch moves[0] {
-        case "A":
-          Rock;
-        case "B":
-          Paper;
-        case "C":
-          Scissors;
+        case "A": Rock;
+        case "B": Paper;
+        case "C": Scissors;
         case _:
           continue;
       }
