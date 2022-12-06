@@ -8,3 +8,5 @@ My Solutions for Advent of Code 2022
 |2  |Haxe    |[Index.hx](./day2/Index.hx)    |
 |3  |V       |[day3.v](./day3/day3.v)        |
 |4  |Zig     |[main.zig](./day4/src/main.zig)|
+|5  |Nim     |TBD                            |
+|6  |Go      |[index.go](./day6/index.go)    |
